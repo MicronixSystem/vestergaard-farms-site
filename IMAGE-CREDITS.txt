@@ -1,0 +1,58 @@
+VESTERGAARD FARMS HOMEPAGE DESIGN
+Image sources and licensing
+Prepared by Allign Marketing, August 2026
+
+-------------------------------------------------------------------
+1. THE FARM'S OWN PHOTOGRAPHS  (11 images)
+-------------------------------------------------------------------
+Taken from vestergaardfarms.com. These are the client's own assets
+and carry no third-party restrictions.
+
+  cat-beef.jpg        Two Belted Galloway calves        (photo gallery)
+  cat-pork.jpg        Pigs feeding outdoors             (photo gallery)
+  cat-chicken.jpg     The laying flock on grass         (our-animals page)
+  cat-bulk.jpg        Chest freezer of wrapped cuts     (blog banner, cropped)
+  farm-store.jpg      The market building, Wagner Road  (photo gallery)
+  farm-grazing.jpg    Cattle on open pasture            (photo gallery)
+  farm-fields.jpg     Cow and calf on clean grass       (our-animals page)
+  farm-handling.jpg   Hand feeding at the fence         (photo gallery)
+  family-founder.jpg  Bottle-feeding a calf             (about-us page)
+  family-cattle.jpg   With one of the cattle in winter  (about-us page)
+  family-hogs.jpg     Piglet close-up                   (photo gallery)
+  tours.jpg           A child holding one of the hens   (photo gallery)
+
+  Note on cat-bulk.jpg: cropped from the banner artwork on the
+  "Quarter Cow vs. Half Cow" blog post to remove the overlaid text.
+  Confirm with the client that they hold rights to that banner before
+  any public use.
+
+-------------------------------------------------------------------
+2. STOCK STAND-INS  (8 images)
+-------------------------------------------------------------------
+Sourced from Wikimedia Commons under open licences. Every one of
+these is a placeholder for a shot the farm does not yet have. They
+are here so the layout can be judged, NOT for launch.
+
+  cat-lamb.jpg        Lamb loin chops
+  cat-salmon.jpg      Raw salmon fillet
+  cat-bundles.jpg     Packaged meat portions
+  cat-pantry.jpg      Pure maple syrup bottle
+  hero-pasture.jpg    Cattle grazing on green pasture
+  recipe-steak.jpg    Cooked steak, plated
+  recipe-broth.jpg    Beef broth in a bowl
+  recipe-roast.jpg    Roast beef dinner
+
+  Licences across this set are CC BY, CC BY-SA and CC0. Several
+  require attribution and share-alike if published as-is.
+
+-------------------------------------------------------------------
+BEFORE LAUNCH
+-------------------------------------------------------------------
+Replace all eight stock images with photography from the farm. The
+shot list is exactly the set above: each cut of meat on a plain
+ground, a packed bundle box open, the Michigan-made shelves in the
+store, a wide hero frame of the pasture, and three cooked dishes for
+the Test Kitchen. That is one photography day.
+
+Doing so also removes every attribution and share-alike obligation
+from the site.
