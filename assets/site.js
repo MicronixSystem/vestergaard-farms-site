@@ -46,10 +46,46 @@
     panel.appendChild(pWrap);
     mast.parentNode.insertBefore(panel, mast.nextSibling);
 
-    mBtn.addEventListener('click', function () {
-      var open = panel.classList.toggle('is-open');
+    var setMenu = function (open) {
+      panel.classList.toggle('is-open', open);
       mBtn.setAttribute('aria-expanded', String(open));
       mBtn.textContent = open ? 'Close' : 'Menu';
+    };
+
+    // the panel sits at the top of the document, under a sticky masthead, so
+    // opening or closing it from halfway down the page has to bring the page
+    // back up to it or nothing appears to happen
+    var toTop = function () {
+      // jump rather than glide: from far down the page a smooth scroll takes long
+      // enough that the panel looks broken while it travels
+      try {
+        window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+      } catch (e) {
+        window.scrollTo(0, 0);
+      }
+      // Safari and older engines ignore the call above when a scroll is in flight
+      if (window.pageYOffset > 0) {
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+      }
+    };
+
+    mBtn.addEventListener('click', function () {
+      setMenu(!panel.classList.contains('is-open'));
+      toTop();
+    });
+
+    // a same-page anchor would otherwise leave the panel hanging open behind
+    // the section it just jumped to, so close it without fighting the jump
+    panel.addEventListener('click', function (e) {
+      var a = e.target.closest ? e.target.closest('a') : null;
+      if (a) setMenu(false);
+    });
+
+    // the button and the panel both disappear above 1080px; do not leave the
+    // state saying Close when the panel can no longer be seen
+    window.addEventListener('resize', function () {
+      if (window.innerWidth > 1080 && panel.classList.contains('is-open')) setMenu(false);
     });
   }
 

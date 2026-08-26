@@ -811,3 +811,6 @@ table.tbl .is-best:hover{background:#F8EDD7}
   .menu-btn{padding:.4rem .6rem;font-size:.8rem}
   .masthead .btn--sm{padding:.45rem .62rem;font-size:.78rem;white-space:nowrap}
 }
+
+/* the masthead is sticky, so an anchored section would otherwise land underneath it */
+[id]{scroll-margin-top:5.5rem}
