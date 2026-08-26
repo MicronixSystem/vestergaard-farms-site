@@ -814,3 +814,15 @@ table.tbl .is-best:hover{background:#F8EDD7}
 
 /* the masthead is sticky, so an anchored section would otherwise land underneath it */
 [id]{scroll-margin-top:5.5rem}
+
+/* ------------------------------------------------ scrollable figures on phones */
+/* the freezer comparison is meaningless once the boxes are 90px wide, so let it
+   keep a legible size and pan instead of shrinking */
+@media (max-width:700px){
+  .frzfig{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .frzfig svg{min-width:600px}
+}
+.pan-hint{display:none;font-size:.78rem;color:var(--gold-dp);font-weight:600;
+  padding:.7rem clamp(1.2rem,3vw,2.2rem) 0}
+.pan-hint--flush{padding-inline:0;padding-top:0;padding-bottom:.6rem}
+@media (max-width:700px){.pan-hint{display:block}}
