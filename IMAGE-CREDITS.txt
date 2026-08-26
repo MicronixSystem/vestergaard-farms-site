@@ -88,6 +88,12 @@ shot list is exactly the set above:
                        shot square, plus a packed share and a freezer
                        filled with your own labelled packages
 
+  Note on the two inner-page heroes: both now run full screen height,
+  which needs frames at least 2000px wide. The farm photographs
+  currently standing in are 516px to 800px wide, so they are soft on a
+  large monitor. Two wide landscape frames, one of the herd and one of
+  a packed freezer, would fix both pages.
+
 That is one photography day, possibly two if the cuts are shot
 properly on a set. Doing it also removes every attribution and
 share-alike obligation from the site.

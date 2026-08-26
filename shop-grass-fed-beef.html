@@ -44,35 +44,11 @@
   </div>
 </header>
 
-<!-- ══════════════════════════════════════════ breadcrumb -->
-<nav class="crumbs" aria-label="Breadcrumb">
-  <div class="wrap">
-    <ol>
-      <li><a href="index.html">Home</a></li>
-      <li class="sep" aria-hidden="true">/</li>
-      <li><a href="shop-grass-fed-beef.html">Shop</a></li>
-      <li class="sep" aria-hidden="true">/</li>
-      <li aria-current="page">Grass-Fed Beef</li>
-    </ol>
-  </div>
-</nav>
-
 <!-- ══════════════════════════════════════════ page head -->
 <section class="pagehead">
-  <img class="pagehead__img" src="images/farm-fields.jpg" width="594" height="396"
-       alt="A Belted Galloway cow and her calf grazing on Vestergaard Farms pasture">
+  <img class="pagehead__img" src="images/farm-grazing.jpg" width="800" height="533"
+       alt="The Vestergaard Farms herd grazing on open pasture">
   <div class="pagehead__scrim"></div>
-  <svg class="pagehead__curve" viewBox="0 0 1440 200" preserveAspectRatio="none"
-       aria-hidden="true" focusable="false">
-    <path d="M0 58C230 4 520 96 780 72 1040 48 1250 104 1440 52V200H0Z"
-          fill="#5C8F68" opacity=".62"/>
-    <path d="M0 100C250 48 540 136 800 112 1060 88 1255 140 1440 98V200H0Z"
-          fill="#2C5C3B"/>
-    <path d="M0 146C260 110 500 172 760 156 1020 140 1235 170 1440 142V200H0Z"
-          fill="#1C3D2C"/>
-    <path d="M0 182C260 164 500 196 760 188 1020 180 1235 194 1440 180V200H0Z"
-          fill="#F3F0E6"/>
-  </svg>
 
   <div class="wrap pagehead__inner">
     <p class="eyebrow eyebrow--lt">Shop &middot; Grass-fed beef</p>
@@ -134,47 +110,85 @@
         <button class="chip" aria-pressed="false">Slow cooking</button>
         <button class="chip" aria-pressed="false">Bones &amp; broth</button>
       </div>
-      <p class="shopbar__count">Showing <b class="num">12</b> of <b class="num">24</b> cuts</p>
+      <div class="shopbar__right">
+        <p class="shopbar__count">Showing <b class="num">12</b> of <b class="num">24</b></p>
+        <select class="sortsel" aria-label="Sort products">
+          <option>Most ordered</option>
+          <option>Price, low to high</option>
+          <option>Price, high to low</option>
+          <option>Price per pound</option>
+          <option>Cooking time</option>
+        </select>
+      </div>
     </div>
+
+    <article class="feature">
+      <div class="feature__media">
+        <span class="feature__badge">This week at the counter</span>
+        <img src="images/cut-ribeye.jpg" width="900" height="600" loading="lazy"
+             alt="A thick bone-in ribeye steak resting on a wooden board">
+      </div>
+      <div class="feature__pad">
+        <p class="eyebrow eyebrow--lt">Cut 2 &middot; Rib</p>
+        <h3 class="h-lg">Bone-In Ribeye</h3>
+        <p>The cut the rest of the animal pays for. Fourteen days on the bone, cut an inch
+          and a quarter thick, with the fat cap left on because that is where the flavour
+          sits. Two of these and a cast iron pan is a better dinner than most restaurants
+          will sell you.</p>
+        <div class="feature__spec">
+          <span class="tag tag--primal">From the rib</span>
+          <span class="tag">approx. 14 oz</span>
+          <span class="tag">1.25 in thick</span>
+          <span class="tag">7 to 9 min</span>
+          <span class="tag">feeds 1</span>
+        </div>
+        <div class="feature__foot">
+          <div class="feature__price">
+            <span class="feature__amt num">$24.50</span>
+            <span class="feature__per num">$28.00 per pound</span>
+          </div>
+          <span class="btn btn--gold">Add to cart</span>
+        </div>
+      </div>
+    </article>
 
     <div class="prodgrid">
 
       <a class="prod" href="#">
-        <div class="prod__media"><span class="prod__flag">Best seller</span>
-          <img src="images/cut-ribeye.jpg" width="900" height="600" loading="lazy"
-               alt="A thick bone-in ribeye steak on a wooden board"></div>
-        <div class="prod__pad">
-          <h3 class="prod__name">Bone-In Ribeye Steak</h3>
-          <p class="prod__meta num">approx. 14 oz &middot; cut 1.25 in thick</p>
-          <p class="prod__price"><span class="prod__amt num">$24.50</span>
-            <span class="prod__per num">$28.00 / lb</span></p>
-          <span class="btn btn--ghost btn--sm btn--block prod__btn">Add to cart</span>
-        </div>
-      </a>
-
-      <a class="prod" href="#">
         <div class="prod__media">
           <img src="images/cut-strip.jpg" width="900" height="506" loading="lazy"
-               alt="A marbled New York strip steak on a white plate"></div>
+               alt="A marbled New York strip steak"></div>
         <div class="prod__pad">
+          <div class="prod__specs"><span class="tag tag--primal">Short loin</span>
+            <span class="tag">approx. 12 oz</span><span class="tag">feeds 1</span></div>
           <h3 class="prod__name">New York Strip Steak</h3>
-          <p class="prod__meta num">approx. 12 oz &middot; boneless</p>
-          <p class="prod__price"><span class="prod__amt num">$19.50</span>
-            <span class="prod__per num">$26.00 / lb</span></p>
-          <span class="btn btn--ghost btn--sm btn--block prod__btn">Add to cart</span>
+          <p class="prod__desc">Boneless, evenly marbled, and a little leaner than the
+            ribeye. The weeknight steak.</p>
+          <p class="prod__stock num">18 in stock</p>
+          <div class="prod__foot">
+            <span class="prod__price"><span class="prod__amt num">$19.50</span>
+              <span class="prod__per num">$26.00 / lb</span></span>
+            <span class="prod__add">Add</span>
+          </div>
         </div>
       </a>
 
-      <a class="prod" href="#">
+      <a class="prod prod--gold" href="#">
         <div class="prod__media"><span class="prod__flag">Most ordered</span>
           <img src="images/cut-ground.jpg" width="900" height="685" loading="lazy"
                alt="Fresh ground beef on a plate"></div>
         <div class="prod__pad">
+          <div class="prod__specs"><span class="tag tag--primal">Chuck</span>
+            <span class="tag">1 lb pack</span><span class="tag">feeds 3</span></div>
           <h3 class="prod__name">Ground Beef, 85% Lean</h3>
-          <p class="prod__meta num">1 lb pack &middot; frozen</p>
-          <p class="prod__price"><span class="prod__amt num">$9.50</span>
-            <span class="prod__per num">$9.50 / lb</span></p>
-          <span class="btn btn--gold btn--sm btn--block prod__btn">Add to cart</span>
+          <p class="prod__desc">Ground fresh from chuck and trim, never from a mix of
+            animals. The one thing worth keeping stacked.</p>
+          <p class="prod__stock num">64 in stock</p>
+          <div class="prod__foot">
+            <span class="prod__price"><span class="prod__amt num">$9.50</span>
+              <span class="prod__per num">$9.50 / lb</span></span>
+            <span class="prod__add">Add</span>
+          </div>
         </div>
       </a>
 
@@ -183,11 +197,17 @@
           <img src="images/cut-patties.jpg" width="900" height="1200" loading="lazy"
                alt="Three quarter-pound beef patties on a plate"></div>
         <div class="prod__pad">
+          <div class="prod__specs"><span class="tag tag--primal">Chuck</span>
+            <span class="tag">4 &times; 4 oz</span><span class="tag">feeds 4</span></div>
           <h3 class="prod__name">Quarter-Pound Patties</h3>
-          <p class="prod__meta num">4 patties &middot; 1 lb total</p>
-          <p class="prod__price"><span class="prod__amt num">$10.50</span>
-            <span class="prod__per num">$10.50 / lb</span></p>
-          <span class="btn btn--ghost btn--sm btn--block prod__btn">Add to cart</span>
+          <p class="prod__desc">Pressed the morning they are packed, with paper between
+            each one so they come apart frozen.</p>
+          <p class="prod__stock num">31 in stock</p>
+          <div class="prod__foot">
+            <span class="prod__price"><span class="prod__amt num">$10.50</span>
+              <span class="prod__per num">$10.50 / lb</span></span>
+            <span class="prod__add">Add</span>
+          </div>
         </div>
       </a>
 
@@ -196,11 +216,17 @@
           <img src="images/cut-chuck-steak.jpg" width="900" height="1200" loading="lazy"
                alt="Two raw chuck steaks"></div>
         <div class="prod__pad">
-          <h3 class="prod__name">Chuck Steak</h3>
-          <p class="prod__meta num">approx. 1.2 lb &middot; bone-in</p>
-          <p class="prod__price"><span class="prod__amt num">$13.20</span>
-            <span class="prod__per num">$11.00 / lb</span></p>
-          <span class="btn btn--ghost btn--sm btn--block prod__btn">Add to cart</span>
+          <div class="prod__specs"><span class="tag tag--primal">Chuck</span>
+            <span class="tag">approx. 1.2 lb</span><span class="tag">feeds 2</span></div>
+          <h3 class="prod__name">Chuck Steak, Bone-In</h3>
+          <p class="prod__desc">Beefier than a ribeye and a third of the price. Marinate it,
+            or braise it and shred it.</p>
+          <p class="prod__stock num">22 in stock</p>
+          <div class="prod__foot">
+            <span class="prod__price"><span class="prod__amt num">$13.20</span>
+              <span class="prod__per num">$11.00 / lb</span></span>
+            <span class="prod__add">Add</span>
+          </div>
         </div>
       </a>
 
@@ -209,11 +235,17 @@
           <img src="images/cut-chuck-roast.jpg" width="900" height="570" loading="lazy"
                alt="A raw beef chuck roast on a cutting board"></div>
         <div class="prod__pad">
+          <div class="prod__specs"><span class="tag tag--primal">Chuck</span>
+            <span class="tag">approx. 3 lb</span><span class="tag">feeds 6</span></div>
           <h3 class="prod__name">Chuck Roast</h3>
-          <p class="prod__meta num">approx. 3 lb &middot; boneless</p>
-          <p class="prod__price"><span class="prod__amt num">$38.85</span>
-            <span class="prod__per num">$12.95 / lb</span></p>
-          <span class="btn btn--ghost btn--sm btn--block prod__btn">Add to cart</span>
+          <p class="prod__desc">Four hours covered at 275&deg;F and it falls apart. Enough
+            for Sunday and Monday's sandwiches.</p>
+          <p class="prod__stock num">9 in stock</p>
+          <div class="prod__foot">
+            <span class="prod__price"><span class="prod__amt num">$38.85</span>
+              <span class="prod__per num">$12.95 / lb</span></span>
+            <span class="prod__add">Add</span>
+          </div>
         </div>
       </a>
 
@@ -222,24 +254,36 @@
           <img src="images/cut-rib-roast.jpg" width="900" height="675" loading="lazy"
                alt="A three-bone standing rib roast ready for the oven"></div>
         <div class="prod__pad">
+          <div class="prod__specs"><span class="tag tag--primal">Rib</span>
+            <span class="tag">approx. 6 lb</span><span class="tag">feeds 10</span></div>
           <h3 class="prod__name">Standing Rib Roast</h3>
-          <p class="prod__meta num">approx. 6 lb &middot; 3 bone</p>
-          <p class="prod__price"><span class="prod__amt num">$167.70</span>
-            <span class="prod__per num">$27.95 / lb</span></p>
-          <span class="btn btn--ghost btn--sm btn--block prod__btn">Reserve</span>
+          <p class="prod__desc">Three bones, chined so it carves cleanly. Reserve two weeks
+            ahead for Christmas.</p>
+          <p class="prod__stock num">Reserve for December</p>
+          <div class="prod__foot">
+            <span class="prod__price"><span class="prod__amt num">$167.70</span>
+              <span class="prod__per num">$27.95 / lb</span></span>
+            <span class="prod__add">Reserve</span>
+          </div>
         </div>
       </a>
 
       <a class="prod" href="#">
         <div class="prod__media">
           <img src="images/cut-brisket.jpg" width="900" height="675" loading="lazy"
-               alt="A whole raw beef brisket on a cutting board"></div>
+               alt="A whole raw beef brisket"></div>
         <div class="prod__pad">
+          <div class="prod__specs"><span class="tag tag--primal">Brisket</span>
+            <span class="tag">approx. 9 lb</span><span class="tag">feeds 14</span></div>
           <h3 class="prod__name">Whole Brisket</h3>
-          <p class="prod__meta num">approx. 9 lb &middot; point and flat</p>
-          <p class="prod__price"><span class="prod__amt num">$103.50</span>
-            <span class="prod__per num">$11.50 / lb</span></p>
-          <span class="btn btn--ghost btn--sm btn--block prod__btn">Add to cart</span>
+          <p class="prod__desc">Point and flat together, fat cap untrimmed so you can trim
+            it the way your smoker likes.</p>
+          <p class="prod__stock num">6 in stock</p>
+          <div class="prod__foot">
+            <span class="prod__price"><span class="prod__amt num">$103.50</span>
+              <span class="prod__per num">$11.50 / lb</span></span>
+            <span class="prod__add">Add</span>
+          </div>
         </div>
       </a>
 
@@ -248,24 +292,36 @@
           <img src="images/cut-stew.jpg" width="900" height="506" loading="lazy"
                alt="Cubed stewing beef on a white board"></div>
         <div class="prod__pad">
+          <div class="prod__specs"><span class="tag tag--primal">Shank</span>
+            <span class="tag">approx. 1.5 lb</span><span class="tag">feeds 4</span></div>
           <h3 class="prod__name">Stew Beef, Cubed</h3>
-          <p class="prod__meta num">approx. 1.5 lb &middot; 1 in cubes</p>
-          <p class="prod__price"><span class="prod__amt num">$17.25</span>
-            <span class="prod__per num">$11.50 / lb</span></p>
-          <span class="btn btn--ghost btn--sm btn--block prod__btn">Add to cart</span>
+          <p class="prod__desc">Cut into one-inch pieces from the shank and the shoulder,
+            where all the collagen is.</p>
+          <p class="prod__stock num">27 in stock</p>
+          <div class="prod__foot">
+            <span class="prod__price"><span class="prod__amt num">$17.25</span>
+              <span class="prod__per num">$11.50 / lb</span></span>
+            <span class="prod__add">Add</span>
+          </div>
         </div>
       </a>
 
       <a class="prod" href="#">
-        <div class="prod__media"><span class="prod__flag prod__flag--quiet">Broth</span>
+        <div class="prod__media"><span class="prod__flag prod__flag--quiet">For broth</span>
           <img src="images/cut-bones.jpg" width="900" height="804" loading="lazy"
                alt="Cross-cut beef marrow bones"></div>
         <div class="prod__pad">
+          <div class="prod__specs"><span class="tag tag--primal">Shank</span>
+            <span class="tag">2 lb pack</span><span class="tag">4 quarts</span></div>
           <h3 class="prod__name">Soup &amp; Marrow Bones</h3>
-          <p class="prod__meta num">2 lb pack &middot; cross cut</p>
-          <p class="prod__price"><span class="prod__amt num">$11.00</span>
-            <span class="prod__per num">$5.50 / lb</span></p>
-          <span class="btn btn--ghost btn--sm btn--block prod__btn">Add to cart</span>
+          <p class="prod__desc">Cross cut so the marrow comes out. Knuckles included, which
+            is what makes the broth set.</p>
+          <p class="prod__stock num">40 in stock</p>
+          <div class="prod__foot">
+            <span class="prod__price"><span class="prod__amt num">$11.00</span>
+              <span class="prod__per num">$5.50 / lb</span></span>
+            <span class="prod__add">Add</span>
+          </div>
         </div>
       </a>
 
@@ -274,11 +330,17 @@
           <img src="images/cut-oxtail.jpg" width="900" height="527" loading="lazy"
                alt="Three sections of raw oxtail"></div>
         <div class="prod__pad">
-          <h3 class="prod__name">Oxtail</h3>
-          <p class="prod__meta num">approx. 2 lb &middot; sectioned</p>
-          <p class="prod__price"><span class="prod__amt num">$23.90</span>
-            <span class="prod__per num">$11.95 / lb</span></p>
-          <span class="btn btn--ghost btn--sm btn--block prod__btn">Add to cart</span>
+          <div class="prod__specs"><span class="tag tag--primal">Round</span>
+            <span class="tag">approx. 2 lb</span><span class="tag">feeds 4</span></div>
+          <h3 class="prod__name">Oxtail, Sectioned</h3>
+          <p class="prod__desc">Four hours in a low oven and it is the best thing the animal
+            gives you. Two per cow, so it goes fast.</p>
+          <p class="prod__stock prod__stock--low num">3 left</p>
+          <div class="prod__foot">
+            <span class="prod__price"><span class="prod__amt num">$23.90</span>
+              <span class="prod__per num">$11.95 / lb</span></span>
+            <span class="prod__add">Add</span>
+          </div>
         </div>
       </a>
 
@@ -287,19 +349,35 @@
           <img src="images/cut-jerky.jpg" width="900" height="675" loading="lazy"
                alt="Strips of beef jerky on butcher paper"></div>
         <div class="prod__pad">
+          <div class="prod__specs"><span class="tag tag--primal">Round</span>
+            <span class="tag">3 oz bag</span><span class="tag">shelf stable</span></div>
           <h3 class="prod__name">Beef Jerky, Original</h3>
-          <p class="prod__meta num">3 oz bag &middot; no nitrates</p>
-          <p class="prod__price"><span class="prod__amt num">$10.95</span>
-            <span class="prod__per num">shelf stable</span></p>
-          <span class="btn btn--ghost btn--sm btn--block prod__btn">Add to cart</span>
+          <p class="prod__desc">Sliced from the round, smoked here, no nitrates and no corn
+            syrup. The thing to keep in the truck.</p>
+          <p class="prod__stock num">52 in stock</p>
+          <div class="prod__foot">
+            <span class="prod__price"><span class="prod__amt num">$10.95</span>
+              <span class="prod__per num">per bag</span></span>
+            <span class="prod__add">Add</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="prod prod--all" href="#">
+        <div class="prod__pad">
+          <p class="eyebrow">Still in the case</p>
+          <h3 class="prod__name">Another twelve cuts.</h3>
+          <p class="prod__desc">Flat iron, skirt, tri-tip, short ribs, sirloin tip, round
+            steak, liver, heart, tongue, suet and the two roasts we only cut to order.</p>
+          <div class="prod__foot">
+            <span class="prod__per num">Updated every Monday</span>
+            <span class="prod__add">See all 24</span>
+          </div>
         </div>
       </a>
 
     </div>
 
-    <div class="cta-row" style="margin-top:2rem;justify-content:center">
-      <a class="btn btn--ghost" href="#">Show the remaining 12 cuts</a>
-    </div>
   </div>
 </section>
 
@@ -337,9 +415,9 @@
 
     <div class="split split--stretch">
       <div class="split__media">
-        <div class="shot shot--fill"><img src="images/farm-grazing.jpg" width="800" height="533"
-             loading="lazy" alt="The herd grazing across open pasture">
-          <span class="plate__cap">The herd on open pasture</span></div>
+        <div class="shot shot--fill"><img src="images/farm-fields.jpg" width="594" height="396"
+             loading="lazy" alt="A Belted Galloway cow and her calf on clean grass">
+          <span class="plate__cap">Cow and calf on clean ground</span></div>
       </div>
       <div>
         <p class="eyebrow">Grass fed and grass finished</p>
@@ -373,75 +451,102 @@
     <div class="head">
       <div>
         <p class="eyebrow">Where it comes from</p>
-        <h2 class="h-lg">Nine primals, and what each one is good for.</h2>
+        <h2 class="h-lg">Nine primals, and what each one is worth.</h2>
         <p>The front of the animal works hard, so it wants time and moisture. The middle
-          barely moves, so it wants heat and speed.</p>
+          barely moves, so it wants heat and speed. This is how a whole animal divides,
+          and how much of each you actually get.</p>
       </div>
       <a class="link-more" href="#guide">Which cut should I buy?</a>
     </div>
 
-    <div class="cutchart">
-      <svg viewBox="0 0 760 300" role="img"
-           aria-label="Diagram of the nine beef primals, five along the top of the animal and four along the underside">
-        <defs>
-          <style>
-            .pw{font-family:Archivo,system-ui,sans-serif;font-size:12.5px;font-weight:600;
-                fill:#FAF8F1;letter-spacing:.02em}
-            .pn{font-family:Petrona,Georgia,serif;font-size:19px;fill:#E3C98E}
-          </style>
-        </defs>
-
-        <!-- top line: the primals along the animal's back -->
-        <g>
-          <rect x="30"  y="30" width="185" height="110" fill="#234D31"/>
-          <rect x="215" y="30" width="105" height="110" fill="#2C5C3B"/>
-          <rect x="320" y="30" width="110" height="110" fill="#3F7D52"/>
-          <rect x="430" y="30" width="110" height="110" fill="#2C5C3B"/>
-          <rect x="540" y="30" width="190" height="110" fill="#234D31"/>
-          <text class="pn" x="46"  y="60">1</text><text class="pw" x="46"  y="98">Chuck</text>
-          <text class="pn" x="231" y="60">2</text><text class="pw" x="231" y="98">Rib</text>
-          <text class="pn" x="336" y="60">3</text><text class="pw" x="336" y="98">Short loin</text>
-          <text class="pn" x="446" y="60">4</text><text class="pw" x="446" y="98">Sirloin</text>
-          <text class="pn" x="556" y="60">5</text><text class="pw" x="556" y="98">Round</text>
-        </g>
-
-        <!-- bottom line: the primals along the underside -->
-        <g>
-          <rect x="30"  y="140" width="160" height="110" fill="#5C8F68"/>
-          <rect x="190" y="140" width="160" height="110" fill="#3F7D52"/>
-          <rect x="350" y="140" width="170" height="110" fill="#5C8F68"/>
-          <rect x="520" y="140" width="210" height="110" fill="#3F7D52"/>
-          <text class="pn" x="46"  y="176">6</text><text class="pw" x="46"  y="214">Brisket</text>
-          <text class="pn" x="206" y="176">7</text><text class="pw" x="206" y="214">Short plate</text>
-          <text class="pn" x="366" y="176">8</text><text class="pw" x="366" y="214">Flank</text>
-          <text class="pn" x="536" y="176">9</text><text class="pw" x="536" y="214">Shank</text>
-        </g>
-
-        <!-- hairlines so the blocks read as one carcass rather than nine tiles -->
-        <g stroke="#F3F0E6" stroke-width="2" opacity=".55">
-          <path d="M215 30V140M320 30V140M430 30V140M540 30V140"/>
-          <path d="M190 140V250M350 140V250M520 140V250"/>
-          <path d="M30 140H730"/>
-        </g>
-        <rect x="30" y="30" width="700" height="220" fill="none"
-              stroke="#1C3D2C" stroke-width="2"/>
-
-        <text x="30" y="276" class="pw" style="fill:#6C6F60;font-size:11.5px">FRONT OF THE ANIMAL</text>
-        <text x="730" y="276" class="pw" style="fill:#6C6F60;font-size:11.5px"
-              text-anchor="end">HIND QUARTER</text>
-      </svg>
-
-      <div class="cutchart__key">
-        <div><b>1</b> Chuck: pot roast, chuck steak, most of the ground</div>
-        <div><b>2</b> Rib: ribeye, standing rib roast, back ribs</div>
-        <div><b>3</b> Short loin: strip steak, T-bone, porterhouse</div>
-        <div><b>4</b> Sirloin: sirloin steak, tri-tip, coulotte</div>
-        <div><b>5</b> Round: rump roast, London broil, minute steak</div>
-        <div><b>6</b> Brisket: whole brisket, corned beef</div>
-        <div><b>7</b> Short plate: skirt steak, short ribs</div>
-        <div><b>8</b> Flank: flank steak, stir fry strips</div>
-        <div><b>9</b> Shank: osso buco, stew beef, soup bones</div>
+    <div class="yc">
+      <div class="yc__top">
+        <p class="yc__tot"><span>Take-home weight, whole animal</span>440 lb, and this is where it sits</p>
+        <div class="yc__legend">
+          <span><i style="background:#8C6520"></i> Slow, hours</span>
+          <span><i style="background:#2F6440"></i> Fast, minutes</span>
+          <span><i style="background:#5C8F68"></i> Lean, slice thin</span>
+        </div>
       </div>
+
+      <p class="yc__group"><b>Along the back</b><em>Front to hind</em></p>
+
+      <div class="yrow">
+        <span class="yrow__n" style="background:#8C6520">1</span>
+        <span class="yrow__name">Chuck<span class="yrow__cuts">Pot roast, chuck steak, and most of the ground</span></span>
+        <span class="yrow__track"><span class="yrow__bar" style="width:100%;background:#8C6520"></span></span>
+        <span class="yrow__fig"><b class="yrow__lb num">114 lb</b><span class="yrow__pc num">26%</span></span>
+        <span class="yrow__how">Slow, hours</span>
+      </div>
+
+      <div class="yrow">
+        <span class="yrow__n" style="background:#2F6440">2</span>
+        <span class="yrow__name">Rib<span class="yrow__cuts">Ribeye, standing rib roast, back ribs</span></span>
+        <span class="yrow__track"><span class="yrow__bar" style="width:34.6%;background:#2F6440"></span></span>
+        <span class="yrow__fig"><b class="yrow__lb num">40 lb</b><span class="yrow__pc num">9%</span></span>
+        <span class="yrow__how">Fast, minutes</span>
+      </div>
+
+      <div class="yrow">
+        <span class="yrow__n" style="background:#2F6440">3</span>
+        <span class="yrow__name">Short loin<span class="yrow__cuts">Strip steak, T-bone, porterhouse</span></span>
+        <span class="yrow__track"><span class="yrow__bar" style="width:30.8%;background:#2F6440"></span></span>
+        <span class="yrow__fig"><b class="yrow__lb num">35 lb</b><span class="yrow__pc num">8%</span></span>
+        <span class="yrow__how">Fast, minutes</span>
+      </div>
+
+      <div class="yrow">
+        <span class="yrow__n" style="background:#2F6440">4</span>
+        <span class="yrow__name">Sirloin<span class="yrow__cuts">Sirloin steak, tri-tip, coulotte</span></span>
+        <span class="yrow__track"><span class="yrow__bar" style="width:34.6%;background:#2F6440"></span></span>
+        <span class="yrow__fig"><b class="yrow__lb num">40 lb</b><span class="yrow__pc num">9%</span></span>
+        <span class="yrow__how">Fast, minutes</span>
+      </div>
+
+      <div class="yrow">
+        <span class="yrow__n" style="background:#5C8F68">5</span>
+        <span class="yrow__name">Round<span class="yrow__cuts">Rump roast, London broil, jerky</span></span>
+        <span class="yrow__track"><span class="yrow__bar" style="width:84.6%;background:#5C8F68"></span></span>
+        <span class="yrow__fig"><b class="yrow__lb num">97 lb</b><span class="yrow__pc num">22%</span></span>
+        <span class="yrow__how">Lean, slice thin</span>
+      </div>
+
+      <p class="yc__group"><b>Along the underside and the legs</b><em>Front to hind</em></p>
+
+      <div class="yrow">
+        <span class="yrow__n" style="background:#8C6520">6</span>
+        <span class="yrow__name">Brisket<span class="yrow__cuts">Whole brisket, corned beef</span></span>
+        <span class="yrow__track"><span class="yrow__bar" style="width:23.1%;background:#8C6520"></span></span>
+        <span class="yrow__fig"><b class="yrow__lb num">26 lb</b><span class="yrow__pc num">6%</span></span>
+        <span class="yrow__how">Slow, hours</span>
+      </div>
+
+      <div class="yrow">
+        <span class="yrow__n" style="background:#8C6520">7</span>
+        <span class="yrow__name">Short plate<span class="yrow__cuts">Skirt steak, short ribs</span></span>
+        <span class="yrow__track"><span class="yrow__bar" style="width:30.8%;background:#8C6520"></span></span>
+        <span class="yrow__fig"><b class="yrow__lb num">35 lb</b><span class="yrow__pc num">8%</span></span>
+        <span class="yrow__how">Slow, hours</span>
+      </div>
+
+      <div class="yrow">
+        <span class="yrow__n" style="background:#2F6440">8</span>
+        <span class="yrow__name">Flank<span class="yrow__cuts">Flank steak, stir fry strips</span></span>
+        <span class="yrow__track"><span class="yrow__bar" style="width:15.4%;background:#2F6440"></span></span>
+        <span class="yrow__fig"><b class="yrow__lb num">18 lb</b><span class="yrow__pc num">4%</span></span>
+        <span class="yrow__how">Fast, minutes</span>
+      </div>
+
+      <div class="yrow">
+        <span class="yrow__n" style="background:#8C6520">9</span>
+        <span class="yrow__name">Shank<span class="yrow__cuts">Osso buco, stew beef, soup bones</span></span>
+        <span class="yrow__track"><span class="yrow__bar" style="width:30.8%;background:#8C6520"></span></span>
+        <span class="yrow__fig"><b class="yrow__lb num">35 lb</b><span class="yrow__pc num">8%</span></span>
+        <span class="yrow__how">Slow, hours</span>
+      </div>
+
+      <p class="yc__foot">Bars are drawn against the chuck, which is the largest single primal.
+        Weights are packed take-home pounds and vary by a few either way between animals.</p>
     </div>
   </div>
 </section>
@@ -548,63 +653,76 @@
       results. It is also the fastest way to cut down the phone calls the farm store fields
       every week.</div>
 
-    <div class="head">
-      <div>
+    <div class="qa">
+      <div class="qa__aside">
         <p class="eyebrow">Questions</p>
         <h2 class="h-lg">The ones we get asked at the counter.</h2>
+        <p style="margin-top:.8rem">Nine out of ten calls to the farm store are one of
+          these. Answering them here is the fastest way to get the phone back.</p>
+        <div class="qa__card">
+          <h3>Not answered here?</h3>
+          <p>Ring the store and ask for whoever is on the counter. They have cut every one
+            of these and will tell you straight.</p>
+          <dl>
+            <div><dt>Telephone</dt><dd class="num">(734) 929-2875</dd></div>
+            <div><dt>Mon to Sat</dt><dd class="num">10am to 7pm</dd></div>
+            <div><dt>Sunday</dt><dd class="num">10am to 5pm</dd></div>
+          </dl>
+          <a class="btn btn--ghost btn--sm btn--block" href="#">Send us a question</a>
+        </div>
       </div>
-    </div>
 
-    <div class="faq">
-      <details open>
-        <summary>Is your beef grass finished, or only grass fed?</summary>
-        <div class="faq__a"><p>Grass finished. Our cattle never receive grain, at any stage,
-          including the final months. That is the part of the label that changes how the meat
-          eats, and it is the part most producers leave out.</p></div>
-      </details>
-      <details>
-        <summary>Does it arrive frozen or fresh?</summary>
-        <div class="faq__a"><p>Frozen solid, vacuum sealed, and labelled with the cut, the
-          weight and the date it was packed. Frozen at this stage protects the meat far better
-          than several days in a display case. Thaw in the fridge overnight.</p></div>
-      </details>
-      <details>
-        <summary>Why is grass-fed beef more expensive?</summary>
-        <div class="faq__a"><p>It takes about eight months longer to bring an animal to weight
-          on grass alone, and it takes considerably more land. You are paying for time and
-          acreage rather than for grain.</p>
-          <p>If price per pound is what matters most to you, <a href="bulk-beef.html">a quarter
-          share</a> brings the same beef down to roughly $8.90 a pound across every cut.</p></div>
-      </details>
-      <details>
-        <summary>How should I cook it differently?</summary>
-        <div class="faq__a"><p>Lower and shorter. Grass-fed beef has less intramuscular fat, so
-          it reaches temperature faster and dries out sooner. Take steaks off the heat about
-          5&deg;F earlier than you would otherwise, and rest them a little longer.</p></div>
-      </details>
-      <details>
-        <summary>Where is it processed?</summary>
-        <div class="faq__a"><p>At a USDA-inspected facility twenty miles from the farm. The
-          animals travel once, on a short trip, which matters for the animal and for the meat.</p></div>
-      </details>
-      <details>
-        <summary>Can I pick up instead of paying for delivery?</summary>
-        <div class="faq__a"><p>Yes. Order online, choose collection, and it will be waiting at
-          the farm store on Wagner Road. We are open seven days a week, until 7pm Monday to
-          Saturday and 5pm on Sunday.</p></div>
-      </details>
-      <details>
-        <summary>Which towns do you deliver to?</summary>
-        <div class="faq__a"><p>Ann Arbor, Ypsilanti, Saline, Dexter and Chelsea. Order by
-          Wednesday at noon and it arrives on Friday. <a href="index.html#delivery">Delivery
-          areas and cut-offs</a>.</p></div>
-      </details>
-      <details>
-        <summary>How long will it keep in the freezer?</summary>
-        <div class="faq__a"><p>Vacuum-sealed steaks and roasts hold their quality for about a
-          year. Ground beef is best inside six months. Neither becomes unsafe after that, but
-          the texture starts to go.</p></div>
-      </details>
+      <div class="faq">
+        <details open>
+          <summary>Is your beef grass finished, or only grass fed?</summary>
+          <div class="faq__a"><p>Grass finished. Our cattle never receive grain, at any stage,
+            including the final months. That is the part of the label that changes how the meat
+            eats, and it is the part most producers leave out.</p></div>
+        </details>
+        <details>
+          <summary>Does it arrive frozen or fresh?</summary>
+          <div class="faq__a"><p>Frozen solid, vacuum sealed, and labelled with the cut, the
+            weight and the date it was packed. Frozen at this stage protects the meat far better
+            than several days in a display case. Thaw in the fridge overnight.</p></div>
+        </details>
+        <details>
+          <summary>Why is grass-fed beef more expensive?</summary>
+          <div class="faq__a"><p>It takes about eight months longer to bring an animal to weight
+            on grass alone, and it takes considerably more land. You are paying for time and
+            acreage rather than for grain.</p>
+            <p>If price per pound is what matters most to you, <a href="bulk-beef.html">a quarter
+            share</a> brings the same beef down to roughly $8.90 a pound across every cut.</p></div>
+        </details>
+        <details>
+          <summary>How should I cook it differently?</summary>
+          <div class="faq__a"><p>Lower and shorter. Grass-fed beef has less intramuscular fat, so
+            it reaches temperature faster and dries out sooner. Take steaks off the heat about
+            5&deg;F earlier than you would otherwise, and rest them a little longer.</p></div>
+        </details>
+        <details>
+          <summary>Where is it processed?</summary>
+          <div class="faq__a"><p>At a USDA-inspected facility twenty miles from the farm. The
+            animals travel once, on a short trip, which matters for the animal and for the meat.</p></div>
+        </details>
+        <details>
+          <summary>Can I pick up instead of paying for delivery?</summary>
+          <div class="faq__a"><p>Yes. Order online, choose collection, and it will be waiting at
+            the farm store on Wagner Road. We are open seven days a week, until 7pm Monday to
+            Saturday and 5pm on Sunday.</p></div>
+        </details>
+        <details>
+          <summary>Which towns do you deliver to?</summary>
+          <div class="faq__a"><p>Ann Arbor, Ypsilanti, Saline, Dexter and Chelsea. Order by
+            Wednesday at noon and it arrives on Friday. <a href="index.html#delivery">Delivery
+            areas and cut-offs</a>.</p></div>
+        </details>
+        <details>
+          <summary>How long will it keep in the freezer?</summary>
+          <div class="faq__a"><p>Vacuum-sealed steaks and roasts hold their quality for about a
+            year. Ground beef is best inside six months. Neither becomes unsafe after that, but
+            the texture starts to go.</p></div>
+        </details>
+      </div>
     </div>
   </div>
 </section>
@@ -617,41 +735,61 @@
       the essay goes underneath, where the search engine still reads it and the shopper never
       has to.</div>
 
-    <div class="longread">
-      <h3>About our grass-fed beef</h3>
-      <p>Vestergaard Farms sits on 112 acres on Wagner Road, about fifteen minutes from
-        downtown Ann Arbor. The cattle you see in these photographs are the cattle in these
-        packages. They are born here, they graze here, and they stay here until they are
-        ready, somewhere between twenty-six and thirty months.</p>
-      <p>The herd moves to fresh grass regularly rather than standing on the same ground all
-        season. That pattern gives the pasture time to recover, builds the soil back up, and
-        keeps the animals eating the diet they evolved to eat. No synthetic herbicide,
-        pesticide or fertiliser has ever touched this land, and no genetically modified grain
-        goes into any animal we raise.</p>
+    <div class="article">
+      <nav class="article__nav" aria-label="In this section">
+        <h3>In this section</h3>
+        <ol>
+          <li><a href="#a-farm">About our grass-fed beef</a></li>
+          <li><a href="#a-meat">What that means for the meat</a></li>
+          <li><a href="#a-buy">Three ways to buy it</a></li>
+          <li><a href="#a-get">Collection and delivery</a></li>
+        </ol>
+      </nav>
 
-      <h3>What that means for the meat</h3>
-      <p>Grass-finished beef is leaner than grain-finished beef, with a firmer texture and a
-        deeper, more mineral flavour. The fat is a shade more yellow, because of the carotene
-        in fresh grass, which is a sign the animal ate what it should have. It also carries a
-        better ratio of omega-3 to omega-6 fats and more conjugated linoleic acid, though we
-        would rather you bought it because it tastes like something.</p>
-      <p>Every carcass is dry aged fourteen days on the bone before it is cut. Ageing costs
-        weight, which is why most of the beef in a supermarket has not had any, but it is what
-        turns tender beef into beef worth talking about.</p>
+      <div class="longread">
+        <h3 id="a-farm">About our grass-fed beef</h3>
+        <p>Vestergaard Farms sits on 112 acres on Wagner Road, about fifteen minutes from
+          downtown Ann Arbor. The cattle you see in these photographs are the cattle in these
+          packages. They are born here, they graze here, and they stay here until they are
+          ready, somewhere between twenty-six and thirty months.</p>
+        <p>The herd moves to fresh grass regularly rather than standing on the same ground all
+          season. That pattern gives the pasture time to recover, builds the soil back up, and
+          keeps the animals eating the diet they evolved to eat. No synthetic herbicide,
+          pesticide or fertiliser has ever touched this land, and no genetically modified grain
+          goes into any animal we raise.</p>
 
-      <h3>Buying from us</h3>
-      <p>You can buy three ways, and which one suits you depends mostly on freezer space:</p>
-      <ul>
-        <li>Cut by cut, from the list on this page, in whatever quantity you like</li>
-        <li>By the <a href="index.html#shop">bundle box</a>, which is a mixed selection at a
-          better price per pound</li>
-        <li>By the <a href="bulk-beef.html">quarter, half or whole animal</a>, which is the
-          cheapest way to eat this beef by a wide margin</li>
-      </ul>
-      <p>Collection at the farm store is free and available seven days a week. Delivery runs
-        every Friday across Ann Arbor, Ypsilanti, Saline, Dexter and Chelsea, on orders placed
-        by Wednesday noon. If you want to see the fields before you buy anything, come out on a
-        Saturday. <a href="index.html#visit">The store is open</a>, and so are the gates.</p>
+        <div class="statline">
+          <div><b class="num">112</b><span>Acres in rotation</span></div>
+          <div><b class="num">0</b><span>Days on grain</span></div>
+          <div><b class="num">20</b><span>Miles to the butcher</span></div>
+        </div>
+
+        <h3 id="a-meat">What that means for the meat</h3>
+        <p>Grass-finished beef is leaner than grain-finished beef, with a firmer texture and a
+          deeper, more mineral flavour. The fat is a shade more yellow, because of the carotene
+          in fresh grass, which is a sign the animal ate what it should have. It also carries a
+          better ratio of omega-3 to omega-6 fats and more conjugated linoleic acid, though we
+          would rather you bought it because it tastes like something.</p>
+
+        <p class="pull">Every carcass is dry aged fourteen days on the bone before it is cut.
+          Ageing costs weight, which is why most supermarket beef has had none of it.</p>
+
+        <h3 id="a-buy">Three ways to buy it</h3>
+        <p>Which one suits you depends mostly on how much freezer space you have:</p>
+        <ul>
+          <li>Cut by cut, from the list on this page, in whatever quantity you like</li>
+          <li>By the <a href="index.html#shop">bundle box</a>, a mixed selection at a better
+            price per pound</li>
+          <li>By the <a href="bulk-beef.html">quarter, half or whole animal</a>, which is the
+            cheapest way to eat this beef by a wide margin</li>
+        </ul>
+
+        <h3 id="a-get">Collection and delivery</h3>
+        <p>Collection at the farm store is free and available seven days a week. Delivery runs
+          every Friday across Ann Arbor, Ypsilanti, Saline, Dexter and Chelsea, on orders placed
+          by Wednesday noon. If you want to see the fields before you buy anything, come out on a
+          Saturday. <a href="index.html#visit">The store is open</a>, and so are the gates.</p>
+      </div>
     </div>
   </div>
 </section>
