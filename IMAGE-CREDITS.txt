@@ -99,10 +99,14 @@ properly on a set. Doing it also removes every attribution and
 share-alike obligation from the site.
 
 -------------------------------------------------------------------
-A NOTE ON THE PRICES
+A NOTE ON HOW THE SITE WORKS
 -------------------------------------------------------------------
-Every price, weight and per-pound figure across all three pages is a
-placeholder. The numbers are realistic for pasture-raised beef sold
-direct in southeast Michigan, and they are internally consistent with
-one another, but they are not the client's. Both beef pages say so on
-the page itself, in a design note and in the footer.
+These pages carry no prices, no cart and no checkout, by design.
+Ordering stays in the existing Barn2Door store at
+app.barn2door.com/QAELV/all, and every buying action on the site is a
+signposted link out to it. Prices, weights and stock are maintained
+in one place only, which is Barn2Door.
+
+Bulk beef shares are arranged by telephone, as they are today. That
+page ends with the number, the email address and a short list of what
+to have ready before ringing, rather than a form.
