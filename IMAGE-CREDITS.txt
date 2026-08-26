@@ -1,9 +1,14 @@
-VESTERGAARD FARMS HOMEPAGE DESIGN
+VESTERGAARD FARMS DESIGN PREVIEW
 Image sources and licensing
 Prepared by Allign Marketing, August 2026
 
+Covers three pages:
+  index.html                   Homepage
+  shop-grass-fed-beef.html     Shop / Grass-Fed Beef category page
+  bulk-beef.html               Bulk Beef (quarter, half and whole)
+
 -------------------------------------------------------------------
-1. THE FARM'S OWN PHOTOGRAPHS  (11 images)
+1. THE FARM'S OWN PHOTOGRAPHS  (12 images)
 -------------------------------------------------------------------
 Taken from vestergaardfarms.com. These are the client's own assets
 and carry no third-party restrictions.
@@ -27,11 +32,11 @@ and carry no third-party restrictions.
   any public use.
 
 -------------------------------------------------------------------
-2. STOCK STAND-INS  (8 images)
+2. STOCK STAND-INS, HOMEPAGE  (8 images)
 -------------------------------------------------------------------
-Sourced from Wikimedia Commons under open licences. Every one of
-these is a placeholder for a shot the farm does not yet have. They
-are here so the layout can be judged, NOT for launch.
+Sourced from Wikimedia Commons under open licences. Every one is a
+placeholder for a shot the farm does not yet have. They are here so
+the layout can be judged, NOT for launch.
 
   cat-lamb.jpg        Lamb loin chops
   cat-salmon.jpg      Raw salmon fillet
@@ -42,17 +47,56 @@ are here so the layout can be judged, NOT for launch.
   recipe-broth.jpg    Beef broth in a bowl
   recipe-roast.jpg    Roast beef dinner
 
-  Licences across this set are CC BY, CC BY-SA and CC0. Several
-  require attribution and share-alike if published as-is.
+-------------------------------------------------------------------
+3. STOCK STAND-INS, BEEF CUTS  (12 images)
+-------------------------------------------------------------------
+Also Wikimedia Commons, added for the two new pages. These stand in
+for the product photography the beef catalogue needs. All resized to
+900px wide and re-compressed.
+
+  cut-ribeye.jpg       Bone-in ribeye on a board
+  cut-strip.jpg        Marbled strip steak, raw
+  cut-ground.jpg       Ground beef on a plate
+  cut-patties.jpg      Quarter-pound patties, raw
+  cut-chuck-steak.jpg  Two raw chuck steaks
+  cut-chuck-roast.jpg  Raw chuck roast on a board
+  cut-rib-roast.jpg    Standing rib roast, raw
+  cut-brisket.jpg      Whole brisket, raw
+  cut-stew.jpg         Cubed stewing beef
+  cut-bones.jpg        Cross-cut marrow bones
+  cut-oxtail.jpg       Sectioned oxtail
+  cut-jerky.jpg        Beef jerky on butcher paper
+
+  Licences across sections 2 and 3 are CC BY, CC BY-SA and CC0.
+  Several require attribution and share-alike if published as-is.
+
+  A few carry visible domestic kitchen backgrounds (a green cutting
+  board, a blue counter). They read acceptably at tile size but are
+  another reason not to ship them.
 
 -------------------------------------------------------------------
 BEFORE LAUNCH
 -------------------------------------------------------------------
-Replace all eight stock images with photography from the farm. The
-shot list is exactly the set above: each cut of meat on a plain
-ground, a packed bundle box open, the Michigan-made shelves in the
-store, a wide hero frame of the pasture, and three cooked dishes for
-the Test Kitchen. That is one photography day.
+Replace all twenty stock images with photography from the farm. The
+shot list is exactly the set above:
 
-Doing so also removes every attribution and share-alike obligation
-from the site.
+  From the homepage    a wide hero frame of the pasture, lamb, salmon,
+                       the Michigan-made shelves, a packed bundle box
+                       open, and three cooked dishes for the Test
+                       Kitchen
+  From the beef pages  every cut in the catalogue on a plain ground,
+                       shot square, plus a packed share and a freezer
+                       filled with your own labelled packages
+
+That is one photography day, possibly two if the cuts are shot
+properly on a set. Doing it also removes every attribution and
+share-alike obligation from the site.
+
+-------------------------------------------------------------------
+A NOTE ON THE PRICES
+-------------------------------------------------------------------
+Every price, weight and per-pound figure across all three pages is a
+placeholder. The numbers are realistic for pasture-raised beef sold
+direct in southeast Michigan, and they are internally consistent with
+one another, but they are not the client's. Both beef pages say so on
+the page itself, in a design note and in the footer.
